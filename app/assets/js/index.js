@@ -49,6 +49,16 @@ angularJs.controller("gameMainCtrl", function ($scope, $rootScope, Username) {
             let computerChoiceName = computerClassInstance.getOptionChosenName();
             let gameWinner = mainGameClassInstance.getWinner( parseInt(numOfPlayerOption), computerChoice);
 
+            if (gameWinner == "Player"){
+                $scope.$apply(function () {
+                    $scope.ScorePlayer ++;
+                });
+            }
+            else if (gameWinner == "Computer"){
+                $scope.$apply(function () {
+                    $scope.ScoreComputer ++;
+                });
+            }
         });
     });  
 });        
