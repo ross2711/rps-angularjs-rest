@@ -5,3 +5,23 @@ body {
 	background-size:  cover;
 	font-family: 'Roboto', sans-serif;
 }
+
+.container {
+    margin: 20px;
+}
+
+.spacer-s {
+    padding: 15px;
+}
+
+.spacer-m {
+    padding: 30px;
+}
+
+.spacer-l {
+    padding: 60px;
+}
+
+.spacer-xl {
+    padding: 90px;
+}

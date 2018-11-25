@@ -14,6 +14,7 @@ angularJs.controller("introCtrl", function ($scope, $rootScope) {
          let userInputText = $(this).val();
          if (userInputText.length > 0){
           $("#startBtn").css("display","inline");
+          console.log('ok');
          }
       });
     });  
