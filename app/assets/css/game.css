@@ -1,0 +1,19 @@
+  .spacer {
+    margin-top: 50px; 
+  }
+ 
+  .modal-body{
+    font-weight: bold;
+    font-size: 2em;
+    text-align: center;
+  }
+  .modal-body > .modal-footer{
+    font-weight: bold;
+    font-size: 2em;
+    text-align: center;
+  }
+  .modal-body img{
+    margin: 0 auto;
+    height: auto;
+    width: 80%;
+  }

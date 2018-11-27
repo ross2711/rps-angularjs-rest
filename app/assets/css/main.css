@@ -3,7 +3,7 @@ body {
 	background-repeat:  no-repeat;
 	background-attachment: fixed;
 	background-size:  cover;
-	font-family: 'Roboto', sans-serif;
+	font-family: 'Roboto', sans-serif !important;
 }
 
 .container {
