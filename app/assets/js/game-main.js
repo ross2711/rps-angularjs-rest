@@ -33,7 +33,7 @@ function StartGame()
       return "draw.gif";
     }
     else if (gameOutcome == "Player"){
-      return "winning.gif";
+      return "win.gif";
     }
     else if (gameOutcome == "Computer"){
       return "lose.gif";

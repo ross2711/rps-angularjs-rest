@@ -1,3 +1,5 @@
+
+<html ng-app="demo">
 <head>
      <link rel="stylesheet" href="./assets/css/game.css">
 </head>
@@ -5,8 +7,6 @@
     <div class="container">
         <div class="row text-center spacer">
             <div class="col-lg-6 offset-lg-3 text-center">
-                <!-- <img class="" src="./assets/img/rps.svg" alt="Generic placeholder image" width="300"> -->
-
                 <h1>Rock, Paper, Scissors</h1>
             </div>
             <div class="col-lg-3">                
@@ -15,25 +15,33 @@
         </div>
         <div class="row spacer text-center">
             <div class="col-lg-4">
-                <img class="rounded-circle" src="./assets/img/avatar1.png" alt="Generic placeholder image" width="140" height="140">
+                <img class="rounded-circle" src="./assets/img/avatar1.png" alt="" width="140" height="140">
                 <h1>{{ Username || 'Player 1'}}</h1>
+                <button role="button" ng-click="callAPI()" id="" class="btn btn-primary">Remote</button>
+
             </div>
+            
             <div class="col-lg-4">
-                <img class="" src="./assets/img/knockout.png" alt="Generic placeholder image" width="300">
+                <img class="" src="../assets/img/knockout.png" alt="" width="300">
                 <h2><span class="badge badge-pill badge-dark float-left">{{ScorePlayer}}</span><span class="badge badge-pill badge-dark float-right">{{ScoreComputer}}</span></h2><br/>
                 <h3>First player to reach 3 points wins!</h3>
                 <p>Rules:<a target="_blank" href="https://en.wikipedia.org/wiki/Rock–paper–scissors">Rock, Paper, Scissors</a></p>
                 <h4>Pick your weapon:</h4>
                 <div class="btn-group">
-                    <button type="submit" value="0" class="btn btn-primary"><img src="./assets/img/rock.png" alt="" style="width:50px;">Rock</button>
-                    <button type="button" value="1" class="btn btn-primary"><img src="./assets/img/paper.png" alt="" style="width:50px;">Paper</button>
-                    <button type="button" value="2" class="btn btn-primary"><img src="./assets/img/scissors.png" alt="" style="width:50px;">Scissors</button>
+                    <button type="button" ng-click="choice(0)" value="0" class="btn btn-primary"><img src="" alt="" style="width:50px;">Rock</button>
+                    <button type="button" ng-click="choice(1)" value="1" class="btn btn-primary"><img src="" alt="" style="width:50px;">Paper</button>
+                    <button type="button" ng-click="choice(2)" value="2" class="btn btn-primary"><img src="" alt="" style="width:50px;">Scissors</button>
                 </div>
             </div>
             <div class="col-lg-4">
-                <img class="rounded-circle" src="./assets/img/avatar2.png" alt="Generic placeholder image" width="140" height="140">
+                <img class="rounded-circle" src="./assets/img/avatar2.png" alt="" width="140" height="140">
                 <h2>Computer</h2>
             </div>
         </div>
     </div>
+
 </body>
+</html>
+
+
+
