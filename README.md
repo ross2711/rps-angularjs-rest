@@ -28,13 +28,13 @@ Install the dependencies
 ```
 npm install
 ```
+Start the server
+```
 node server.js
 ```
 In the browser, go to http://localhost:3000/random-number
 
 ## Built With
-
-The architecture is based on the Job Description - I tried to use as many of the 'Must Have' and 'Highly Desirable' skills.
 
 JavaScript. AngularJS framework
 HTML5, CSS3, JSON
