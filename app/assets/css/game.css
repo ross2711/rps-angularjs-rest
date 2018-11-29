@@ -1,11 +1,10 @@
-  .spacer {
-    margin-top: 50px; 
-  }
- 
   .modal-body{
     font-weight: bold;
     font-size: 2em;
     text-align: center;
+  }
+  .modal-dialog {
+    margin-top: 130px;
   }
   .modal-body > .modal-footer{
     font-weight: bold;
@@ -17,3 +16,14 @@
     height: auto;
     width: 80%;
   }
+  .button-space-l {
+    margin: 0 0 0 20px;
+  }
+  .button-space-r {
+    margin: 0 20px 0 0;
+  }
+  .button-space {
+    margin: 0 20px;
+  }
+
+

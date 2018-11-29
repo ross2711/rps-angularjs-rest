@@ -1,5 +1,5 @@
 <head>
-    <link rel="stylesheet" href="./assets/css/game.css">
+    <link rel="stylesheet" href="../assets/css/game.css">
 </head>
 
 <body>
@@ -9,33 +9,35 @@
                 <h1>Rock, Paper, Scissors</h1>
             </div>
             <div class="col-lg-3">
-                <a role="button" href='#!' id="startBtn" class="btn btn-outline-info btn-sm">New Player</a>
+                <a role="button" href='#!' id="startBtn" class="btn btn-secondary btn-sm"><i class="fas fa-exchange-alt"></i>&nbsp;Change Player</a>
             </div>
         </div>
-        <div class="row spacer text-center">
+        <div class="row spacer-l text-center">
             <div class="col-lg-4">
-                <img class="rounded-circle" src="./assets/img/avatar1.png" alt="" width="140" height="140">
+                <img class="rounded-circle" src="./assets/img/avatar1.png" alt="" width="150" height="150">
                 <h1>{{ Username || 'Player 1'}}</h1>
-                <button role="button" ng-click="callAPI()" id="" class="btn btn-primary">Remote</button>
-
             </div>
 
             <div class="col-lg-4">
                 <img class="" src="../assets/img/knockout.png" alt="" width="300">
-                <h2><span class="badge badge-pill badge-dark float-left">{{ScorePlayer}}</span><span class="badge badge-pill badge-dark float-right">{{ScoreComputer}}</span></h2><br />
-                <h3>First player to reach 3 points wins!</h3>
+                <h2 class="spacer-m"><span class="badge badge-pill badge-danger float-left ">{{ScorePlayer}}</span><span class="badge badge-pill badge-danger float-right">{{ScoreComputer}}</span></h2><br />
+                <h3 class="spacer-m">First player to reach 3 points wins!</h3>
                 <p>Rules:<a target="_blank" href="https://en.wikipedia.org/wiki/Rock–paper–scissors">Rock, Paper, Scissors</a></p>
                 <h4>Pick your weapon:</h4>
                 <div class="btn-group">
-                    <button type="button" ng-click="choice(0)" value="0" class="btn btn-primary"><img src="" alt="" style="width:50px;">Rock</button>
-                    <button type="button" ng-click="choice(1)" value="1" class="btn btn-primary"><img src="" alt="" style="width:50px;">Paper</button>
-                    <button type="button" ng-click="choice(2)" value="2" class="btn btn-primary"><img src="" alt="" style="width:50px;">Scissors</button>
+                    <button type="button" ng-click="choice(0)" value="0" class="btn btn-primary btn-lg button-space-r"><img src="" alt="">Rock</button>
+                    <button type="button" ng-click="choice(1)" value="1" class="btn btn-primary btn-lg button-space"><img src="" alt="">Paper</button>
+                    <button type="button" ng-click="choice(2)" value="2" class="btn btn-primary btn-lg float-right button-space-l"><img src="" alt="">Scissors</button>
                 </div>
+
             </div>
             <div class="col-lg-4">
-                <img class="rounded-circle" src="./assets/img/avatar2.png" alt="" width="140" height="140">
+                <img class="rounded-circle" src="./assets/img/avatar2.png" alt="" width="150" height="150">
                 <h2>Computer</h2>
             </div>
+        </div>
+        <div class="row col-lg-4 offset-lg-4 text-center spacer-m">
+            <button role="button" ng-click="callAPI()" id="" class="btn btn-warning btn-lg btn-block">Pick For Me (API)</button>
         </div>
     </div>
 </body>

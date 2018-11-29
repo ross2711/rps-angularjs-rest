@@ -46,7 +46,7 @@ angularJs.controller("gameMainCtrl", function($scope, $http, $rootScope, Usernam
     $scope.ScoreComputer = 0;
 
     const playGame = function(numOfPlayerOption) {
-        console.log('playGame', numOfPlayerOption)
+
         let mainGameClassInstance = new StartGame();
         let computerClassInstance = new Computer();
         let playerClassInstance = new Player();
@@ -62,7 +62,6 @@ angularJs.controller("gameMainCtrl", function($scope, $http, $rootScope, Usernam
             } else if (gameWinner == "Computer") {
                 $scope.ScoreComputer++;
             }
-
 
             if ($scope.ScorePlayer == 3 || $scope.ScoreComputer == 3) {
 
@@ -91,7 +90,7 @@ angularJs.controller("gameMainCtrl", function($scope, $http, $rootScope, Usernam
         }
         $('#myModal').modal('show', setTimeout(function() {
             $('#myModal').modal('hide');
-        }, 1500));
+        }, 1000));
     };
 
 });

@@ -35,7 +35,7 @@ function StartGame() {
     var test = getOutcomeImage(gameOutcome);
     newtest = (test.slice(0, -4)).toUpperCase();;
     if (choiceFromComputer != null && gameOutcome != null) {
-        return "<div class='modal fade' id='myModal' role='dialog'><div class='modal-dialog'><div class='modal-content'> <div class='modal-body' style='text-align: center;'><p>" + "You chose " + String(choiceFromPlayer) + "<br/>CPU chose " + String(choiceFromComputer) + "</br></br>" + "<img src='./assets/img/" + test + "'> </p> </div><div class='modal-footer'><h1 >" + newtest + "</h1></div></div></div></div>";
+        return "<div class='modal fade' id='myModal' role='dialog'><div class='modal-dialog'><div class='modal-content'> <div class='modal-body' style='text-align: center;'><p>" + "You chose " + String(choiceFromPlayer) + "<br/>Computer chose " + String(choiceFromComputer) + "</br></br>" + "<img src='./assets/img/" + test + "'> </p> </div><div class='modal-footer'><h1 >" + newtest + "</h1></div></div></div></div>";
     }
     return "";
   };

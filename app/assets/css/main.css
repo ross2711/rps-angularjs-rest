@@ -7,22 +7,22 @@ body {
 }
 
 .container {
-    margin: 20px;
+    padding-top: 20px;
 }
 
 .spacer-s {
-    padding: 15px;
+    padding-top: 15px;
 }
 
 .spacer-m {
-    padding: 30px;
+    padding-top: 30px;
 }
 
 .spacer-l {
-    padding: 60px;
+    padding-top: 60px;
 }
 
 .spacer-xl {
-    padding: 90px;
+    padding-top: 90px;
 }
 
