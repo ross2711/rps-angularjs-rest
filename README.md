@@ -36,11 +36,11 @@ In the browser, go to http://localhost:3000/random-number
 
 ## Built With
 
-JavaScript. AngularJS framework
+JavaScript, AngularJS framework,
 HTML5, CSS3, JSON
-Node.js
-Express
-Twitter Bootstrap
+Node.js,
+Express,
+Twitter Bootstrap,
 REST
 
 ## License
